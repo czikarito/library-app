@@ -14,6 +14,9 @@
       <th>{{contact.id}}</th>
       <td>{{contact.email}}</td>
       <td>{{contact.message}}</td>
+      <div class="panel-footer text-right">
+        <button class="btn btn-danger btn-xs" {{action 'deleteContact' contact}}>Delete</button>
+      </div>
     </tr>
   {{/each}}
   </tbody>
